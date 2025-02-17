@@ -1,99 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="my">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Login</title>
+    <title>SBS / Bus ပေါ်မှ အတွေ့အကြုံများ</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: "Pyidaungsu", sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
             margin: 0;
+            padding: 20px;
         }
-        .login-container {
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             background-color: #fff;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .login-container h2 {
+        h1 {
             color: #1877f2;
+            text-align: center;
+            font-size: 28px;
             margin-bottom: 20px;
         }
-        .login-container input {
-            width: 100%;
-            padding: 12px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            font-size: 16px;
-            box-sizing: border-box; /* Ensure padding doesn't affect width */
-            transition: border-color 0.3s ease; /* Smooth transition for focus */
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
         }
-        .login-container input:focus {
-            border-color: #1877f2; /* Change border color on focus */
-            outline: none; /* Remove default outline */
-            box-shadow: 0 0 5px rgba(24, 119, 242, 0.5); /* Add a subtle shadow */
-        }
-        .login-container input::placeholder {
-            color: #999; /* Placeholder text color */
-        }
-        .login-container button {
-            width: 100%;
-            padding: 12px;
-            background-color: #1877f2;
-            border: none;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease; /* Smooth hover effect */
-        }
-        .login-container button:hover {
-            background-color: #166fe5;
-        }
-        .login-container a {
+        .highlight {
             color: #1877f2;
-            text-decoration: none;
-            display: block;
-            margin: 10px 0;
-            font-size: 14px;
+            font-weight: bold;
         }
-        .login-container hr {
-            border: 0.5px solid #ddd;
+        .quote {
+            font-style: italic;
+            color: #555;
+            border-left: 4px solid #1877f2;
+            padding-left: 10px;
             margin: 20px 0;
         }
-        .login-container .create-account {
-            background-color: #42b72a;
-            color: #fff;
-            padding: 12px;
-            border-radius: 5px;
+        .footer {
+            text-align: center;
+            margin-top: 30px;
             font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease; /* Smooth hover effect */
-        }
-        .login-container .create-account:hover {
-            background-color: #36a420;
+            color: #777;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Facebook</h2>
-        <form>
-            <input type="text" placeholder="Email or Phone Number" required>
-            <input type="password" placeholder="Password" required>
-            <button type="submit">Log In</button>
-            <a href="#">Forgot Password?</a>
-            <hr>
-            <div class="create-account">Create New Account</div>
-        </form>
+    <div class="container">
+        <h1>SBS / Bus ပေါ်မှ အတွေ့အကြုံများ</h1>
+        <p>ဒီနေ့ကတော့ ၂ နှစ်နီးပါးကာလအတွင်း ပထမဆုံးအကြိမ် ကြုံရတဲ့ အတွေ့အကြုံပါပဲ။</p>
+        <p><span class="highlight">ရွှေမြန်မာ မမ</span> ရဲ့ Bus ကားပေါ်က အဖြစ်အပျက်ခုပေါ့။</p>
+        <p>ဖြစ်ပုံကတော့ Bus ကားပေါ်မှာ တခါမှ မတွေ့ခဲ့ဖူးတဲ့ လက်မှတ်စစ်နဲ့ တွေ့ပါလေရော။</p>
+        <p>ဟိုးရှေ့ ကားခေါင်းခန်းကနေ့ တယောက်ပြီးပြီးတယောက် <span class="highlight">MRT Card</span> တွေကို စစ်ပါတယ်။ Card ကိုတောင်းတယ်၊ ဖုန်းနဲ့ Scan ဖတ်ပြီး ပြန်ပေးပေါ့။</p>
+        <p>ကိုယ့်ရှေ့မျက်စောင်းထိုးမှာ ထိုင်နေကြတဲ့ ဗမာ မလေးတို့အလှည့်ကြ နှစ်ယောက်မှာ တယောက်ရဲ့ ကတ်က Card ဖြတ်ထားတာ မတွေ့တော့ မေးပါပြီ။</p>
+        <p>ဘယ်နခါတောင် မဖြတ်ထားလဲတော့မသိဘူး 😁။</p>
+        <div class="quote">"You never touch..." လား ဘာလား ပေါ့။</div>
+        <p>တို့ <span class="highlight">မမ</span> ကလည်း ရှင်းတယ်၊ အတိတ်မေ့သလို ရွှေပျောက်သလိုလိုနဲ့ ပြီးမှ...</p>
+        <div class="quote">"Oh... I forget... I forget..." ဆိုပြီးလုပ်တယ်။</div>
+        <p>ဟိုက ဘာမှတော့ မပြောတော့ဘူး၊ Card သိမ်းသွားပါလေရော 😁😁။</p>
+        <p>ကတ်က အရင်ရှေ့မှာတုန်းကလည်း ဘယ်နခါမဖြတ်ဘဲ သုံးနေလဲတော့မသိဘူး။</p>
+        <p>တကယ်မေ့နေတာလား၊ တမင် မဖြတ်ဘဲ စီးနေတာလားတော့ သူကိုယ်တိုင်မှပဲ သိပါလိမ့်မယ်။</p>
+        <p>ဪ ... ဆုံရကြုံရ ဘုံဘဝမှာဖြင့်...</p>
+    </div>
+    <div class="footer">
+        <p>© 2023 SBS / Bus အတွေ့အကြုံများ</p>
     </div>
 </body>
 </html>
