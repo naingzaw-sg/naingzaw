@@ -3,52 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook UI</title>
+    <title>Facebook Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: #f0f2f5;
-        }
-        .navbar {
-            background-color: #ffffff;
-            padding: 10px;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            height: 100vh;
+            margin: 0;
         }
-        .navbar .logo {
-            font-size: 24px;
-            font-weight: bold;
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h2 {
             color: #1877f2;
+            margin-bottom: 20px;
         }
-        .navbar .search {
-            padding: 8px;
-            border-radius: 20px;
-            border: 1px solid #ddd;
-            width: 200px;
-        }
-        .navbar .profile {
-            display: flex;
-            align-items: center;
-        }
-        .navbar .profile img {
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-        .main-content {
-            display: flex;
-            margin-top: 20px;
-        }
-        .sidebar {
-            width: 25%;
-            background-color: #ffffff;
+        .login-container input {
+            width: 100%;
             padding: 10px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
         }
-        .feed {
-            width:
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #166fe5;
+        }
+        .login-container a {
+            color: #1877f2;
+            text-decoration: none;
+            display: block;
+            margin: 10px 0;
+        }
+        .login-container hr {
+            border: 0.5px solid #ddd;
+            margin: 20px 0;
+        }
+        .login-container .create-account {
+            background-color: #42b72a;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .login-container .create-account:hover {
+            background-color: #36a420;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Facebook</h2>
+        <form>
+            <input type="text" placeholder="Email or Phone Number" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Log In</button>
+            <a href="#">Forgot Password?</a>
+            <hr>
+            <div class="create-account">Create New Account</div>
+        </form>
+    </div>
+</body>
+</html>
