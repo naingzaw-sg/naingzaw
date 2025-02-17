@@ -3,72 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBS / Bus ပေါ်မှ အတွေ့အကြုံများ</title>
+    <title>ပစ္စည်းပျောက်ဆုံးခြင်း နှင့် ပြန်တွေ့လျင် သတင်းပို့ရန်</title>
     <style>
         body {
             font-family: "Pyidaungsu", sans-serif;
-            line-height: 1.6;
-            background-color: #f9f9f9;
+            background-color: #f0f2f5;
             color: #333;
             margin: 0;
-            padding: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: 0 auto;
             background-color: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
         }
         h1 {
             color: #1877f2;
-            text-align: center;
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 20px;
         }
-        p {
-            font-size: 18px;
-            margin-bottom: 15px;
+        form {
+            display: flex;
+            flex-direction: column;
         }
-        .highlight {
-            color: #1877f2;
-            font-weight: bold;
-        }
-        .quote {
-            font-style: italic;
-            color: #555;
-            border-left: 4px solid #1877f2;
-            padding-left: 10px;
-            margin: 20px 0;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 30px;
+        label {
             font-size: 16px;
-            color: #777;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        input, textarea, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: "Pyidaungsu", sans-serif;
+        }
+        button {
+            padding: 10px;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #166fe5;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>SBS / Bus ပေါ်မှ အတွေ့အကြုံများ</h1>
-        <p>ဒီနေ့ကတော့ ၂ နှစ်နီးပါးကာလအတွင်း ပထမဆုံးအကြိမ် ကြုံရတဲ့ အတွေ့အကြုံပါပဲ။</p>
-        <p><span class="highlight">ရွှေမြန်မာ မမ</span> ရဲ့ Bus ကားပေါ်က အဖြစ်အပျက်ခုပေါ့။</p>
-        <p>ဖြစ်ပုံကတော့ Bus ကားပေါ်မှာ တခါမှ မတွေ့ခဲ့ဖူးတဲ့ လက်မှတ်စစ်နဲ့ တွေ့ပါလေရော။</p>
-        <p>ဟိုးရှေ့ ကားခေါင်းခန်းကနေ့ တယောက်ပြီးပြီးတယောက် <span class="highlight">MRT Card</span> တွေကို စစ်ပါတယ်။ Card ကိုတောင်းတယ်၊ ဖုန်းနဲ့ Scan ဖတ်ပြီး ပြန်ပေးပေါ့။</p>
-        <p>ကိုယ့်ရှေ့မျက်စောင်းထိုးမှာ ထိုင်နေကြတဲ့ ဗမာ မလေးတို့အလှည့်ကြ နှစ်ယောက်မှာ တယောက်ရဲ့ ကတ်က Card ဖြတ်ထားတာ မတွေ့တော့ မေးပါပြီ။</p>
-        <p>ဘယ်နခါတောင် မဖြတ်ထားလဲတော့မသိဘူး 😁။</p>
-        <div class="quote">"You never touch..." လား ဘာလား ပေါ့။</div>
-        <p>တို့ <span class="highlight">မမ</span> ကလည်း ရှင်းတယ်၊ အတိတ်မေ့သလို ရွှေပျောက်သလိုလိုနဲ့ ပြီးမှ...</p>
-        <div class="quote">"Oh... I forget... I forget..." ဆိုပြီးလုပ်တယ်။</div>
-        <p>ဟိုက ဘာမှတော့ မပြောတော့ဘူး၊ Card သိမ်းသွားပါလေရော 😁😁။</p>
-        <p>ကတ်က အရင်ရှေ့မှာတုန်းကလည်း ဘယ်နခါမဖြတ်ဘဲ သုံးနေလဲတော့မသိဘူး။</p>
-        <p>တကယ်မေ့နေတာလား၊ တမင် မဖြတ်ဘဲ စီးနေတာလားတော့ သူကိုယ်တိုင်မှပဲ သိပါလိမ့်မယ်။</p>
-        <p>ဪ ... ဆုံရကြုံရ ဘုံဘဝမှာဖြင့်...</p>
+        <h1>ပစ္စည်းပျောက်ဆုံးခြင်း နှင့် ပြန်တွေ့လျင် သတင်းပို့ရန်</h1>
+        
+        <!-- ပစ္စည်းပျောက်ဆုံးကြောင်း သတင်းပို့ရန် Form -->
+        <form id="lostForm">
+            <h2>ပစ္စည်းပျောက်ဆုံးကြောင်း သတင်းပို့ရန်</h2>
+            <label for="lostItem">ပစ္စည်းအမျိုးအစား</label>
+            <input type="text" id="lostItem" placeholder="ဥပမာ - ပိုက်ဆံအိတ်၊ ဖုန်း" required>
+            
+            <label for="lostLocation">ပျောက်ဆုံးသည့်နေရာ</label>
+            <input type="text" id="lostLocation" placeholder="ဥပမာ - ဘတ်စ်ကား၊ ဈေးဝယ်စင်တာ" required>
+            
+            <label for="lostDescription">အသေးစိတ်ဖော်ပြချက်</label>
+            <textarea id="lostDescription" rows="4" placeholder="ပစ္စည်းနှင့်ပတ်သက်သည့် အသေးစိတ်ဖော်ပြချက်" required></textarea>
+            
+            <label for="contactInfo">ဆက်သွယ်ရန်</label>
+            <input type="text" id="contactInfo" placeholder="ဖုန်းနံပါတ် သို့မဟုတ် အီးမေးလ်" required>
+            
+            <button type="submit">သတင်းပို့ရန်</button>
+        </form>
+
+        <!-- ပစ္စည်းပြန်တွေ့ကြောင်း သတင်းပို့ရန် Form -->
+        <form id="foundForm">
+            <h2>ပစ္စည်းပြန်တွေ့ကြောင်း သတင်းပို့ရန်</h2>
+            <label for="foundItem">ပစ္စည်းအမျိုးအစား</label>
+            <input type="text" id="foundItem" placeholder="ဥပမာ - ပိုက်ဆံအိတ်၊ ဖုန်း" required>
+            
+            <label for="foundLocation">တွေ့ရှိသည့်နေရာ</label>
+            <input type="text" id="foundLocation" placeholder="ဥပမာ - ဘတ်စ်ကား၊ ဈေးဝယ်စင်တာ" required>
+            
+            <label for="foundDescription">အသေးစိတ်ဖော်ပြချက်</label>
+            <textarea id="foundDescription" rows="4" placeholder="ပစ္စည်းနှင့်ပတ်သက်သည့် အသေးစိတ်ဖော်ပြချက်" required></textarea>
+            
+            <label for="finderContact">ဆက်သွယ်ရန်</label>
+            <input type="text" id="finderContact" placeholder="ဖုန်းနံပါတ် သို့မဟုတ် အီးမေးလ်" required>
+            
+            <button type="submit">သတင်းပို့ရန်</button>
+        </form>
+
+        <!-- သတင်းပို့ပြီးကြောင်း မှတ်ချက် -->
+        <div id="message" class="message"></div>
     </div>
-    <div class="footer">
-        <p>© 2023 SBS / Bus အတွေ့အကြုံများ</p>
-    </div>
+
+    <script>
+        // Form တင်လိုက်တဲ့အခါ လုပ်ဆောင်မယ့် JavaScript
+        document.getElementById('lostForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('message').innerText = "ပစ္စည်းပျောက်ဆုံးကြောင်း သတင်းပို့ပြီးပါပြီ။ ကျေးဇူးတင်ပါတယ်။";
+        });
+
+        document.getElementById('foundForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('message').innerText = "ပစ္စည်းပြန်တွေ့ကြောင်း သတင်းပို့ပြီးပါပြီ။ ကျေးဇူးတင်ပါတယ်။";
+        });
+    </script>
 </body>
 </html>
